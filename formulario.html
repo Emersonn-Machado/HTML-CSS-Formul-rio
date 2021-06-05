@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title> Formulário </title>
+</head>
+<body>
+    <form>
+
+        <div>
+            <h1 id="titulo"> Formulário candidato vaga de T.I</h1>
+            <p id="subtitulo"><strong>Complete Suas informações<strong></p>
+        </div>
+
+        <fieldset class="grupo-fieldset">
+            <div class="campo">
+                <label for="name"> Nome e Sobrenome </label>
+                <input type="text" name="nomesobrenome" id="nomesobrenome" required placeholder="Emerson Machado">
+                
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone"> Telefone </label>
+                <input type="tel" name="telefone" id="telefone" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="ultimaempresa"> Ultima empresa que trabalhou: </label>
+                <input type="text" name="ultimaempresa" id="ultimaempresa" placeholder="Não obrigatório">
+                <label for="funcaoexercida"> Conte um pouco mais de sua experiência: </label>
+                <textarea cols="75" rows="8" id="mensagem"> </textarea>
+            </div>
+        </fieldset>
+        <fieldset class="grupo-fieldset">
+            <div class="opcoes">
+                <legend class="legenda"> Nas opções abaixo como você se classificaria: </legend>
+                
+                <label class="checkbox"><input type="checkbox" id="hardware" name="hardware" value="hardware"> Hardware </label>
+                <label class="checkbox"><input type="checkbox" id="software" name="software" value="software"> Software </label>                
+            </div>
+        
+            <div id="campo">
+                <legend class="legenda"> Selecione as tecnologia que utiliza:</legend>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> HTML </label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2"> CSS </label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3"> JavaScript </label>
+                <input type="checkbox" id="tecnologia4" name="tecnoligia4" value="PHP">
+                <label for="tecnologia4"> PHP </label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5"> C# </label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6"> Python </label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7"> Java </label>
+                <input type="checkbox" id="tecnologia8" name="tecnologia8" value="Shell">
+                <label for="tecnologia8"> Shell </label>
+                <input type="checkbox" id="tecnoligia9" name="tecnologia9" value="SQL">
+                <label for="tecnologia9"> SQL </label>
+                <input type="checkbox" id="tecnologia10" name="tecnologia10" value="Node.Js">
+                <label for="tecnologia10"> Node.Js </label>
+            </div>        
+        
+            <div class="opcoes">
+                <legend class="legenda"> Horários disponiveis para a vaga, selecione sua preferência: </legend>
+                    <select>
+                        <option selected disabled value="">Selecione</option>
+                        <option> 07h ~ 17h </option>
+                        <option> 11h ~ 21h </option>
+                        <option> 22h ~ 06h </option>
+                    </select>
+            </div>    
+        
+            <div class="campo">
+                <legend class="legenda"> Como prefere nosso contato? </legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" checked> Email </label>                
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone </label>                
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"> WhatsApp </label><br>
+               <!-- <input type="submit" value="Enviar formulário" class="enviar"> -->
+                <button class="botao" type="submit" onsubmit=""> Enviar formulário </button>      
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
